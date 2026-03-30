@@ -1,123 +1,51 @@
-k<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PULSO GONZO | Terminal</title>
+    <title>PULSO GONZO</title>
     <style>
         :root {
-            --color-bg: #0a0a0a;
-            --color-text: #eee;
-            --color-accent: #ff4444;
-            --color-cyber: #00f2ff;
-            --font-main: 'Courier New', Courier, monospace;
+            --color-bg: #050505;
+            --color-text: #e0e0e0;
+            --color-cyber: #39ff14; /* VERDE NEÓN CYBERPUNK */
+            --color-accent: #ff003c;
+            --font-mono: 'Courier New', monospace;
         }
-
-        * {
-            box-sizing: border-box;
-        }
-
         body {
             background-color: var(--color-bg);
             color: var(--color-text);
-            font-family: var(--font-main);
-            margin: 0;
-            padding: 20px;
-            line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            font-family: var(--font-mono);
+            margin: 0; padding: 15px;
+            display: flex; flex-direction: column; align-items: center;
         }
-
         header {
-            width: 100%;
-            max-width: 800px;
-            border-bottom: 2px solid var(--color-accent);
-            margin-bottom: 30px;
-            padding-bottom: 10px;
+            width: 100%; max-width: 800px;
+            border-bottom: 1px solid var(--color-cyber);
+            margin-bottom: 20px; padding-bottom: 10px;
         }
-
         h1 {
-            font-size: 1.5rem;
             color: var(--color-cyber);
+            text-shadow: 0 0 10px var(--color-cyber);
+            font-size: 1.4rem; margin: 0;
             text-transform: uppercase;
-            margin: 0;
         }
-
-        #logs {
-            width: 100%;
-            max-width: 800px;
-            display: flex;
-            flex-direction: column;
-        }
-
+        .meta { font-size: 0.65rem; color: #444; margin-top: 5px; }
+        #logs { width: 100%; max-width: 800px; }
         .log-entry {
-            border-left: 4px solid var(--color-accent);
-            padding: 20px;
-            margin-bottom: 40px;
-            background: rgba(255, 255, 255, 0.03);
-            word-wrap: break-word;
-            overflow-wrap: break-word;
+            border-left: 2px solid var(--color-accent);
+            padding-left: 15px; margin-bottom: 40px;
+            background: rgba(57, 255, 20, 0.02);
         }
-
-        .timestamp {
-            color: #666;
-            font-size: 0.85rem;
-            display: block;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
-
-        .editorial-text {
-            font-size: 1.1rem;
-            text-align: left;
-            color: #fff;
-            white-space: pre-wrap; /* Para que respete los saltos de línea de la IA */
-        }
-
-        /* --- OPTIMIZACIÓN MOBILE --- */
-        @media (max-width: 600px) {
-            body {
-                padding: 15px;
-            }
-
-            header {
-                margin-bottom: 20px;
-            }
-
-            h1 {
-                font-size: 1.2rem;
-            }
-
-            .log-entry {
-                padding: 15px;
-                border-left-width: 3px;
-                margin-bottom: 25px;
-            }
-
-            .editorial-text {
-                font-size: 1rem;
-                line-height: 1.5;
-            }
-        }
+        .timestamp { color: #555; font-size: 0.8rem; display: block; margin-bottom: 10px; }
+        .editorial-text { font-size: 1rem; line-height: 1.6; white-space: pre-wrap; }
     </style>
 </head>
 <body>
-
     <header>
         <h1>PULSO GONZO</h1>
-        <div style="font-size: 0.7rem; color: #444;">LENOVO_G400S // LUQUE_PY // TERMINAL_ACTIVE</div>
+        <div class="meta">SYSTEM_LENOVO_G400S // LUQUE_CENTRAL // LIVE_FEED</div>
     </header>
-
-    <div id="logs">
-    <div class="log-entry">
-        <span class="timestamp">[REGISTRO_NACIONAL: 2026-03-30 18:50]</span>
-        <div class="editorial-text">
-            Paraguay: un país donde la rutina parece haber tomado el control.<br><br>Hoy, el centro integral infantil de la capital nos ofrece un reflejo del estado general del país: una mezcla inesperada de esfuerzo y desgaste. La simplificación de la matriculación de motos para acelerar la formalización del sector, por ejemplo, muestra que incluso en los sectores más dinámicos, hay un esfuerzo por mejorar el entorno.<br><br>Pero, ¿qué ha pasado con otros aspectos? La Alianza Pública-Privada intenta impulsar el empleo juvenil en la industria, pero parece que aún está asombrándose de la eficacia de sus propuestas. Algo se ha perdido al pasar por alto los problemas más básicos: educación y seguridad.<br><br>Y luego, hubo Pedrozo: camión perdió los frenos y embistió a tres vehículos que esperaban luz verde. Es un ejemplo perfecto del eterno retorno de los mismos problemas: la falta de planificación y la corrupción siguen siendo obstáculos intransponibles.<br><br>En resumen, Paraguay parece estar atrapado en una rutina perpetua, donde el esfuerzo se desvanece sin dejar rastro. Pero, quizás, no somos capaces de mudarnos a otro lugar, ni de cambiar nuestro camino, debido al estado general del país y los problemas que nos rodean.<br><br>
-        </div>
-    </div>
-    
-        </div>
-
+    <div id="logs"><div class="log-entry"><span class="timestamp">[2026-03-30 18:57]</span><div class="editorial-text">Negocios: La farsa de la matriculación de motos. ¿Cuántas veces tenemos que decir que eso es una buena idea? El gobierno se encarga de simplificarla, pero qué importancia tiene cuando hay otra cosa que tener que pensar.<br><br>Alianza pública-privada: ¡El empuje para el empleo juvenil! Sin duda, es un buen movimiento. Pero ¿por qué tanto dolor y desesperanza entre jóvenes? La industria sigue siendo una fábrica de tanteos y sueños rotos.<br><br>Paraguay en la calle: El calor es demasiado... ¡Y las motos son demasiado baratas! La gente se siente abrumada por la cada vez mayor cantidad de problemas que tienen a su alcance. Pero aún así, vamos a seguir adelante, ¿verdad?<br><br></div></div></div>
 </body>
 </html>
