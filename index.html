@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PULSO GONZO</title>
+    <title>PULSO GONZO v2.2</title>
     <style>
         :root {
             --color-bg: #050505;
-            --color-text: #e0e0e0;
-            --color-cyber: #39ff14; /* VERDE NEÓN CYBERPUNK */
+            --color-text: #d0d0d0;
+            --color-cyber: #39ff14;
             --color-accent: #ff003c;
             --font-mono: 'Courier New', monospace;
         }
@@ -22,30 +22,40 @@
         header {
             width: 100%; max-width: 800px;
             border-bottom: 1px solid var(--color-cyber);
-            margin-bottom: 20px; padding-bottom: 10px;
+            margin-bottom: 30px; padding-bottom: 10px;
         }
-        h1 {
-            color: var(--color-cyber);
-            text-shadow: 0 0 10px var(--color-cyber);
-            font-size: 1.4rem; margin: 0;
-            text-transform: uppercase;
-        }
+        h1 { color: var(--color-cyber); font-size: 1.4rem; margin: 0; text-transform: uppercase; }
         .meta { font-size: 0.65rem; color: #444; margin-top: 5px; }
         #logs { width: 100%; max-width: 800px; }
         .log-entry {
-            border-left: 2px solid var(--color-accent);
-            padding-left: 15px; margin-bottom: 40px;
-            background: rgba(57, 255, 20, 0.02);
+            border-left: 3px solid var(--color-accent);
+            padding-left: 20px; margin-bottom: 50px;
+            background: rgba(255, 255, 255, 0.02);
         }
-        .timestamp { color: #555; font-size: 0.8rem; display: block; margin-bottom: 10px; }
-        .editorial-text { font-size: 1rem; line-height: 1.6; white-space: pre-wrap; }
+        .timestamp { color: #555; font-size: 0.75rem; display: block; margin-bottom: 15px; }
+        .titulo-editorial { 
+            color: var(--color-cyber); 
+            font-size: 1.3rem; 
+            margin: 0 0 15px 0; 
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+        .editorial-text { font-size: 1rem; line-height: 1.7; text-align: justify; }
+        @media (max-width: 600px) { .titulo-editorial { font-size: 1.1rem; } }
     </style>
 </head>
 <body>
     <header>
-        <h1>PULSO GONZO</h1>
-        <div class="meta">SYSTEM_LENOVO_G400S // LUQUE_CENTRAL // LIVE_FEED</div>
+        <h1>PULSO GONZO <span style="font-size: 0.6rem; vertical-align: middle; opacity: 0.5;">v2.2</span></h1>
+        <div class="meta">HARDWARE_LENOVO_G400S // OS_DEBIAN // SOURCE_OLLAMA_MISTRAL</div>
     </header>
-    <div id="logs"><div class="log-entry"><span class="timestamp">[2026-03-30 18:57]</span><div class="editorial-text">Negocios: La farsa de la matriculación de motos. ¿Cuántas veces tenemos que decir que eso es una buena idea? El gobierno se encarga de simplificarla, pero qué importancia tiene cuando hay otra cosa que tener que pensar.<br><br>Alianza pública-privada: ¡El empuje para el empleo juvenil! Sin duda, es un buen movimiento. Pero ¿por qué tanto dolor y desesperanza entre jóvenes? La industria sigue siendo una fábrica de tanteos y sueños rotos.<br><br>Paraguay en la calle: El calor es demasiado... ¡Y las motos son demasiado baratas! La gente se siente abrumada por la cada vez mayor cantidad de problemas que tienen a su alcance. Pero aún así, vamos a seguir adelante, ¿verdad?<br><br></div></div></div>
+    <div id="logs">
+    <div class="log-entry">
+        <span class="timestamp">[2026-03-30 19:27]</span>
+        <h2 class="titulo-editorial">ERROR DE SISTEMA</h2>
+        <div class="editorial-text">La terminal colapsó. Command '['ollama', 'run', 'mistral', '\n    NOTICIAS:\n    Paraguay da paso clave con primer centro integral infantil\n- Ciencia\n- Negocios\n- Semana Santa: el presidente Peña declaró asueto el miércoles para funcionarios públicos\n- Gobierno simplifica matriculación de motos para acelerar la formalización del sector\n- Tecnología\n\n    VOZ:\n    Sos un cronista paraguayo insomne. Calor pegado al cuerpo. Pantalla vieja.\n    Mitad Bukowski, mitad Hunter S. Thompson.\n\n    REGLAS:\n    - NO resumir noticias, NO explicar contexto.\n    - Estilo crudo, imágenes físicas (humo, calle, baches).\n    - Política = circo, Crimen = rutina, Economía = resignación.\n\n    ESTRUCTURA OBLIGATORIA:\n    1. PRIMERA LÍNEA = TÍTULO (Máx 8 palabras, golpe directo).\n    2. LUEGO: 4 párrafos de texto (120-180 palabras total).\n    \n    Sin comillas, sin introducciones. Empezá directo con el Título.\n    ']' timed out after 240 seconds</div>
+    </div>
+    
+        </div>
 </body>
 </html>
