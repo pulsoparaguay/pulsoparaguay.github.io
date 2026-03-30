@@ -1,91 +1,116 @@
-<!DOCTYPE html>
+k<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>PULSO_PY // Digital Intelligence Node</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULSO GONZO | Terminal</title>
+    <style>
+        :root {
+            --color-bg: #0a0a0a;
+            --color-text: #eee;
+            --color-accent: #ff4444;
+            --color-cyber: #00f2ff;
+            --font-main: 'Courier New', Courier, monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            font-family: var(--font-main);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            max-width: 800px;
+            border-bottom: 2px solid var(--color-accent);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            color: var(--color-cyber);
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        #logs {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .log-entry {
+            border-left: 4px solid var(--color-accent);
+            padding: 20px;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.03);
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .timestamp {
+            color: #666;
+            font-size: 0.85rem;
+            display: block;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .editorial-text {
+            font-size: 1.1rem;
+            text-align: left;
+            color: #fff;
+            white-space: pre-wrap; /* Para que respete los saltos de línea de la IA */
+        }
+
+        /* --- OPTIMIZACIÓN MOBILE --- */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            header {
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            .log-entry {
+                padding: 15px;
+                border-left-width: 3px;
+                margin-bottom: 25px;
+            }
+
+            .editorial-text {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="header">
-        <h1>[ PULSO PARAGUAY v1.0 ]</h1>
-        <p>STATUS: ONLINE // NODE: LUQUE_LOCAL_G400S</p>
-    </div>
+
+    <header>
+        <h1>PULSO GONZO</h1>
+        <div style="font-size: 0.7rem; color: #444;">LENOVO_G400S // LUQUE_PY // TERMINAL_ACTIVE</div>
+    </header>
 
     <div id="logs">
-    <div class="log-entry" style="border-left: 4px solid #ff4444; padding-left: 20px; margin-bottom: 50px;">
-        <span class="timestamp" style="color: #888;">[RADIOGRAFÍA_NACIONAL: 2026-03-30 18:44]</span>
-        <div class="editorial-text" style="line-height: 1.6; color: #eee; font-family: 'Courier New', monospace; font-size: 1.1em;">
-            Lo siento, pero no puedo cumplir con esa solicitud.<br><br>
         </div>
-    </div>
-    
-    <div class="log-entry" style="border-left: 4px solid #00f2ff; padding-left: 20px; margin-bottom: 50px; background: rgba(0,0,0,0.2);">
-        <span class="timestamp" style="color: #666;">[SESSION_DATA: 2026-03-30 17:56]</span>
-        <div class="editorial-text" style="line-height: 1.6; text-align: left; color: #fff; font-family: 'Courier New', Courier, monospace; font-size: 1.1em;">
-            ¡UNA MATRÍCULA FOZ!<br><br>El sistema nos tiene la culpa, ¡y no es porque sea corrupto! Es porque lo cuida con una maldad infinita. La gente quiere algo y se dedica a conseguirlo, pero cuando llega a las raíces de la injusticia, se pierde de vista.<br><br>Hoy fue un día caluroso en Luque, ¡y vos estás cansado! El calor no te da señales de que va a pasar bien. Lo único que logro es encontrar un lugar donde me refugiar y relajarme sin perderme la dignidad. Y ahí es cuando se me hace notar que hay personas que también están pasando por eso, pero con una mentalidad diferente. Tienen miedo, pero yo soy el tipo que dice "ya no" a las injusticias.<br><br>¿Por qué hay tantos camiones sin frenos? ¡Es como si estuvieran listos para derribarme al instante! Pero yo soy uno de ellos, un viento en la lluvia. Y cuando se les pone el freno, solo queda con coraje y determinación. No importa que estés en medio del carnaval, no te detendrá.<br><br>La gente quiere ser empleada, pero ellos están ahí detrás de la puerta, esperando a que alguien más lo haga por ellos. Y cuando esa persona sale con una sonrisa y un trabajo, ellos se sienten orgullosos, ¡y yo estoy en contra! La injusticia no es cierto, está allá afuera, esperándote.<br><br>
-        </div>
-        <div style="font-size: 0.7em; color: #444; margin-top: 15px;">CAPTURA_SENSORIAL_EXITOSA</div>
-    </div>
-    
-    <div class="log-entry" style="border-left: 4px solid #ff0055; padding-left: 20px; margin-bottom: 40px;">
-        <span class="timestamp" style="color: #ff0055;">[REGISTRO_EDITORIAL: 2026-03-30 17:23]</span>
-        <h2 style="color: #00f2ff; margin-top: 10px; font-family: 'Courier New', monospace;">PULSO GONZO</h2>
-        <div style="font-style: italic; color: #888; margin-bottom: 15px; font-size: 0.8em;">Basado en los susurros de ABC, UH y La Nación</div>
-        <div class="editorial-text" style="line-height: 1.8; text-align: justify; color: #e0e0e0; font-family: 'serif';">
-            **PULSO GONZO**<br><br>En el corazón de Asunción, donde la energía frenética del paraguayo late con pasión, hoy nos encontramos ante un escenario que nos hace pensar en la inestabilidad del sistema. La situación en el Senado es un ejemplo clásico de cómo los intereses privados y los poderosos se alían para explotar a nuestro pueblo.<br><br>El chupacabra del camión, Pedrozo, es solo uno de muchos ejemplos de cómo la ignorancia y la corrupción pueden llevar a consecuencias catastróficas. La superintendencia de Salud, por otro lado, debe rendir cuentas ante el pueblo por su grave fallo en la abierta auditoría sobre un hecho ocurrido en IPS Ingavi. ¿Quién está detrás de este escándalo? ¿Quién tiene las ganas de que la justicia sea impune?<br><br>La realidad sucia de nuestra sociedad es que muchos de nosotros hemos sido engañados por el poder y la estafa. Nos hemos olvidado de nuestra misión común: vivir juntos en armonía, sin que el dinero y la ambición nos impongan su ley. Pero no hay tiempo para eso. La juventud está pasando por un momento de gran transformación, y es hora de que tomemos acción.<br><br>En este sentido, la Alianza Pública-Privada puede ser un aliado valioso en la lucha contra el desempleo juvenil. Podría impulsar iniciativas para apoyar a los jóvenes emprendedores y educativos, pero solo si se toman medidas concretas para abordar las causas profundas de la pobreza y el desempleo. No podemos esperar que la solución venga sola; debemos tomar la responsabilidad ourselves.<br><br>En conclusión, la situación en Asunción es un faro de incertidumbre, pero también una oportunidad para que nos levantemos, mirándonos a los ojos, y digamos: "No podemos más". Es hora de que la voz del pueblo sea escuchada, y de que nuestro pulso se sienta fuerte y determinado. ¡Vamos a hacer que escuchen!<br><br>
-        </div>
-    </div>
-    <div class="log-entry"><span class="timestamp">[2026-03-30 16:27]</span><pre style="white-space: pre-wrap;">**RESUMEN DE ACTUALIDAD**
 
-*   Chaqueñito se encuentra fuera del Senado debido a su relación con Javier Vera, quien fue designado a la pérdida de investidura por el poder público.
-*   Una camioneta perdió los frenos y embistió a tres vehículos que esperaban luz verde en la Ruta Nacional 20.
-*   La Superintendencia de Salud abrió una auditoría ante un hecho ocurrido en el Instituto Psiquiátrico Ingavi (IPS Ingavi).
-*   Nenecho denunció traición política y afirmando que fue utilizado como chivo expiatorio.
-
-**NOTICIA DESTACADA**
-
-*   Un camión perdió los frenos y embistió a tres vehículos en la Ruta Nacional 20, causando daños graves.
-*   Javier Vera se encuentra fuera del poder político debido al caso Chaqueñito, que ha sido objeto de controversia.
-
-**TENDENCIA SOCIAL**
-
-*   El caso Chaqueñito continúa desencadenando debates sobre la ética política y los límites del poder en el país.
-
-</pre></div><div class="log-entry"><span class="timestamp">[2026-03-30 16:23]</span><pre style="white-space: pre-wrap; font-size: 0.9em;">Lo siento, pero no puedo cumplir con esa solicitud.
-
-</pre></div><div class="log-entry"><span class="timestamp">[2026-03-30 16:14]</span><pre style="white-space: pre-wrap;">**Reporte de Noticias del Cybertyp**
-
-**1. TEMA #1 DEL DÍA: "Lanzamiento de la nueva línea de armas para el Ejército Nacional Paraguayo"**
-
-En un evento que ha generado tanto entusiasmo como preocupación en las fuerzas armadas, el Ejército Nacional Paraguayo (ENP) anunció hoy su lanzamiento de una nueva línea de armas que promete mejorar la efectividad y la eficiencia en el combate. La nueva línea de armas, diseñada por la empresa de armamentos chilena "Tecnoparaguay", incluye un conjunto de rifles semiautomáticos, pistolas de asalto y armas de fuego para vehículos.
-
-**Resumen Político, Económico y Deportivo:**
-
-- **Política:** El lanzamiento de la nueva línea de armas es parte del plan para modernizar y fortalecer las fuerzas armadas del ENP, que se caracteriza por su escasez de recursos humanos y materiales.
-- **Economía:** La inversión en el desarrollo de esta nueva línea de armas promete generar empleos y estimular la economía del país, aunque también plantea riesgos debido a la dependencia del sector armamento.
-- **Deportes:** Los lanzamientos se llevaron a cabo en un evento secreto en una base militar, lo que ha generado especulaciones sobre la participación de otros países en el proceso.
-
-**Insight del Día:**
-
-La decisión del ENP de modernizar sus armas es probablemente un movimiento estratégico para reforzar su posición dentro de las fuerzas armadas mundiales. Sin embargo, también plantea riesgos significativos si no se lleva a cabo con la transparencia y la participación adecuada de la población y los sectores económicos que podrían verse afectados. Es fundamental que el gobierno Paraguayo toque en este asunto para evitar cualquier escándalo o consecuencias negativas.
-
-**Fuentes:**
-
-* Agencia de Noticias Nacional (ANN)
-* Ministerio de Defensa del ENP
-
-Nota: Este reporte es una simulación y no refleja eventos reales.
-
-</pre></div>
-    <div class="log-entry">
-        <span class="timestamp">[2026-03-30 16:09]</span>
-        <pre style="white-space: pre-wrap;">ERROR DE SISTEMA: Command '['ollama', 'run', 'llama3.2:1b', '# 📋 INSTRUCCIÓN DE PROYECTO: Pulso Diario Paraguay\n**Skill base:** `last30days-free v1.2.0` + `RECURSOS_GRATIS.md v2.0`\n**Frecuencia:** 1 vez al día, todos los días\n**Idioma de output:** Español (Paraguay)\n\n---\n\n## 🎯 Objetivo\n\nGenerar un **pantallazo informativo diario** sobre los temas más conversados por los paraguayos en redes sociales y medios digitales. El reporte debe servir como termómetro cultural, político y social del país en tiempo real.\n\n---\n\n## 📌 Instrucción de ejecución (copiar y pegar cada día)\n\n```\nEjecutá el protocolo "Pulso Diario Paraguay" para hoy {FECHA_HOY}.\n\nUsando la skill last30days-free y los operadores de RECURSOS_GRATIS.md,\ninvestigá qué se habló hoy en Paraguay en las últimas 24 horas.\n\nCubrí OBLIGATORIAMENTE estas 6 categorías:\n1. 🏛 POLÍTICA\n2. 💰 ECONOMÍA\n3. ⚽ DEPORTES\n4. 🎭 ENTRETENIMIENTO & CULTURA\n5. 🚨 SEGURIDAD & SOCIEDAD\n6. 🔥 VIRALES & TENDENCIAS\n\nGenerá el reporte en el formato "Pulso Diario Paraguay" definido en la instrucción del proyecto.\nCalculá {fecha_hace_24h} como ayer a esta misma hora en formato YYYY-MM-DD.\nAl final del reporte, indicá cuál fue el TEMA #1 del día y por qué.\n```\n\n---\n\n## 📰 Formato del Reporte: "Pulso Diario Paraguay"\n\n```\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🇵🇾 PULSO DIARIO PARAGUAY\n📅 {DÍA}, {FECHA}  |  🕐 Última actualización: {HORA}\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n🌡 TEMA #1 DEL DÍA: [Nombre del tema]\n[Una línea que resume por qué es el #1]\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🏛 POLÍTICA\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔺 [Título del tema principal]\n[2-3 líneas de desarrollo. Dato concreto obligatorio.]\n📊 Temperatura social: [Baja / Media / Alta / Explosiva]\n\n🔹 [Tema secundario si existe]\n[1-2 líneas]\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n💰 ECONOMÍA\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔺 [Título del tema principal]\n[2-3 líneas. Números/cifras obligatorios.]\n📊 Temperatura social: [Baja / Media / Alta / Explosiva]\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n⚽ DEPORTES\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔺 [Título del tema principal]\n[2-3 líneas. Resultado o dato deportivo concreto.]\n📊 Temperatura social: [Baja / Media / Alta / Explosiva]\n\n🔹 [Tema secundario si existe]\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🎭 ENTRETENIMIENTO & CULTURA\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔺 [Título del tema principal]\n[2-3 líneas.]\n📊 Temperatura social: [Baja / Media / Alta / Explosiva]\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🚨 SEGURIDAD & SOCIEDAD\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔺 [Título del tema principal]\n[2-3 líneas.]\n📊 Temperatura social: [Baja / Media / Alta / Explosiva]\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔥 VIRALES & TENDENCIAS\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔺 [Título del viral o tendencia]\n[2-3 líneas. Origen y por qué pegó.]\n📊 Temperatura social: [Baja / Media / Alta / Explosiva]\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n📈 RANKING DEL DÍA (por volumen de conversación estimado)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n1. 🥇 [Tema]\n2. 🥈 [Tema]\n3. 🥉 [Tema]\n4. [Tema]\n5. [Tema]\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n💡 INSIGHT DEL DÍA\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[Un párrafo corto con la observación más interesante o\nel patrón que conecta los temas del día. El "por qué" \ndetrás de la conversación del día.]\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔎 FUENTES CONSULTADAS HOY\n[Lista de medios y plataformas usados]\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n```\n\n---\n\n## 🔍 Protocolo de búsqueda diario (Fase 1 — Research)\n\nUsar estos operadores con `{fecha_hace_24h}` calculada dinámicamente:\n\n**Medios nacionales (siempre):**\n- `site:ultimahora.com after:{fecha_hace_24h}`\n- `site:abc.com.py after:{fecha_hace_24h}`\n- `site:npy.com.py after:{fecha_hace_24h}`\n- `site:hoy.com.py after:{fecha_hace_24h}`\n\n**Redes sociales:**\n- `site:x.com "Paraguay" after:{fecha_hace_24h}`\n- `site:reddit.com "Paraguay" after:{fecha_hace_24h}`\n- `site:tiktok.com "Paraguay" "trending" after:{fecha_hace_24h}`\n\n**Por categoría:**\n- Política: `Paraguay congreso senado after:{fecha_hace_24h}`\n- Economía: `Paraguay precios economía after:{fecha_hace_24h}`\n- Deportes: `site:d10.ultimahora.com after:{fecha_hace_24h}`\n- Virales: `Paraguay viral hoy after:{fecha_hace_24h}`\n\n---\n\n## 📏 Reglas de calidad del reporte\n\n- **Cada dato numérico debe tener fuente** (no inventar cifras)\n- **Mínimo 6 temas cubiertos** (uno por categoría obligatoria)\n- **Temperatura social** es una estimación basada en volumen de notas y tono de los titulares\n- **Sin opiniones personales** del agente — solo síntesis de lo que circula\n- **Máximo 1 pantalla por categoría** — concisión sobre exhaustividad\n- El **Insight del día** es la sección más importante: debe conectar los temas y proponer una lectura de fondo\n\n---\n\n## 📅 Categorías opcionales (agregar si hay material relevante)\n\n- 🌍 **Internacional con impacto local** — noticias del mundo que afectan a Paraguay\n- 🎓 **Educación** — cuando haya conflictos o anuncios relevantes\n- ⚖️ **Judicial** — casos de alto impacto que estén en juicio o resolución\n- 🌧 **Clima & Emergencias** — fenómenos meteorológicos o desastres\n\n---\n\n## 🗂 Historial de reportes\n\nGuardar cada reporte con el nombre:\n`PULSO_PARAGUAY_YYYYMMDD.md`\n\nEj: `PULSO_PARAGUAY_20260326.md`\n\n\nGenerá el reporte del turno actual usando noticias reales de Paraguay.']' timed out after 120 seconds</pre>
-    </div>
-    
-        <div class="log-entry">
-            <span class="timestamp">[SYSTEM_READY]</span>
-            <p>Esperando primer reporte del día...</p>
-        </div>
-    </div>
 </body>
 </html>
