@@ -3,143 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pulso Diario Paraguay</title>
-    <style>
-        :root {
-            --color-background-primary: #ffffff;
-            --color-background-secondary: #f8f9fa;
-            --color-text-primary: #1a1a1a;
-            --color-text-secondary: #4a4a4a;
-            --color-text-tertiary: #707070;
-            --color-border-tertiary: #e0e0e0;
-            --border-radius-lg: 12px;
-            --border-radius-md: 8px;
-            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: var(--font-sans); background-color: #f0f2f5; padding: 10px; color: var(--color-text-primary); }
-        .wrapper { max-width: 650px; margin: 0 auto; }
-        
-        .header { background: var(--color-background-secondary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.25rem; margin-bottom: 1rem; }
-        .header-top { display: flex; align-items: center; gap: 10px; margin-bottom: 4px; }
-        .title { font-size: 20px; font-weight: 600; }
-        .subtitle { font-size: 12px; color: var(--color-text-secondary); }
-
-        .tema1-bar { background: #fff; border-left: 4px solid #D85A30; border-radius: var(--border-radius-md); padding: 1rem; margin-bottom: 1rem; border: 0.5px solid var(--color-border-tertiary); border-left-width: 4px; }
-        .tema1-label { font-size: 11px; font-weight: 700; color: #D85A30; text-transform: uppercase; margin-bottom: 4px; }
-        .tema1-name { font-size: 15px; font-weight: 600; }
-
-        .section { background: #fff; border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.25rem; margin-bottom: 0.75rem; }
-        .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; border-bottom: 0.5px solid var(--color-border-tertiary); padding-bottom: 8px; }
-        .section-title { font-size: 15px; font-weight: 600; }
-
-        .topic { margin-bottom: 1rem; }
-        .topic-title { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
-        .topic-body { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 8px; }
-        
-        .temp-badge { font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 99px; text-transform: uppercase; }
-        .temp-explosiva { background: #FCEBEB; color: #A32D2D; }
-        .temp-alta { background: #FAECE7; color: #993C1D; }
-        .temp-media { background: #EAF3DE; color: #3B6D11; }
-
-        .divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 12px 0; }
-        .ranking { background: #fff; border-radius: var(--border-radius-lg); padding: 1.25rem; margin-bottom: 0.75rem; border: 0.5px solid var(--color-border-tertiary); }
-        .rank-item { display: flex; gap: 10px; padding: 8px 0; border-bottom: 0.5px solid var(--color-border-tertiary); font-size: 13px; }
-        
-        .insight { background: #edf2f7; border-radius: var(--border-radius-lg); padding: 1.25rem; margin-bottom: 1rem; }
-        .insight-label { font-size: 11px; font-weight: 700; color: var(--color-text-secondary); text-transform: uppercase; margin-bottom: 8px; display: block; }
-        .insight-text { font-size: 13px; line-height: 1.7; font-style: italic; }
-
-        .sources { font-size: 11px; color: var(--color-text-tertiary); padding: 1rem; text-align: center; line-height: 1.5; }
-    </style>
+    <title>Pulso Paraguay | Inteligencia Estratégica y de Mercado</title>
+    <meta name="description" content="Servicio de monitoreo semanal de inteligencia estratégica para empresas. Análisis de entorno, competencia y riesgos.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrapper">
-    <div class="header">
-        <div class="header-top"><span class="flag">🇵🇾</span> <span class="title">Pulso Diario Paraguay</span></div>
-        <div class="subtitle">Lunes, 30 de marzo de 2026 | 19:00 hs | Asunción</div>
-    </div>
 
-    <div class="tema1-bar">
-        <div class="tema1-label">Tema #1 del día</div>
-        <div class="tema1-name">Expulsión de "Chaqueñito" Vera del Senado</div>
-        <div class="tema1-desc">La Cámara Alta lo destituyó por unanimidad (36 votos) tras escándalo de audios vinculados a abuso de menores.</div>
-    </div>
-
-    <div class="section">
-        <div class="section-header">🏛 <span class="section-title">Política</span></div>
-        <div class="topic">
-            <div class="topic-title">Senado expulsa a "Chaqueñito" Vera: 36-0</div>
-            <div class="topic-body">La pérdida de investidura fue unánime. La pericia confirmó la voz humana y sus exaliados le soltaron la mano.</div>
-            <div class="temp-badge temp-explosiva">Explosiva</div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="pulsoparaguay-logo.png" alt="Pulso Paraguay Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#metodologia">Metodología</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="https://wa.me/595972488421" class="btn btn-nav">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i data-lucide="menu"></i>
+            </div>
         </div>
-        <hr class="divider">
-        <div class="topic">
-            <div class="topic-title">Sanciones a transportistas</div>
-            <div class="topic-body">Claudia Centurión anunció posibles cancelaciones de permisos a empresas que pararon el fin de semana.</div>
-            <div class="temp-badge temp-alta">Alta</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge">Inteligencia de Mercado y Entorno</span>
+                <h1>Tomamos el <span>pulso real</span> de tu entorno empresarial</h1>
+                <p>Análisis estratégico semanal para que tu empresa deje de depender de la intuición y tome decisiones basadas en inteligencia real.</p>
+                <div class="hero-btns">
+                    <a href="#servicios" class="btn btn-primary">Ver Servicios</a>
+                    <a href="#metodologia" class="btn btn-secondary">Nuestra Metodología</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="pulse-animation">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
-        <div class="section-header">💰 <span class="section-title">Economía</span></div>
-        <div class="topic">
-            <div class="topic-title">Desembolso de USD 7,6 millones para buses</div>
-            <div class="topic-body">El Gobierno acordó compensaciones por tarifas de 2025 y subsidios de 2026 para destrabar la crisis del transporte.</div>
-            <div class="temp-badge temp-alta">Alta</div>
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Qué es Pulso Paraguay?</h2>
+                <p>Un termómetro en tiempo real de tu entorno: medios, competencia, reputación y riesgos emergentes.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i data-lucide="thermometer"></i>
+                    <h3>Temperatura Social</h3>
+                    <p>Clasificación semanal de la conversación sobre tu empresa: Explosiva, Alta, Media o Baja.</p>
+                </div>
+                <div class="service-card">
+                    <i data-lucide="radar"></i>
+                    <h3>Radar de Competencia</h3>
+                    <p>Monitoreo de movimientos, lanzamientos, campañas y cambios de precios de tus competidores.</p>
+                </div>
+                <div class="service-card">
+                    <i data-lucide="alert-triangle"></i>
+                    <h3>Alertas Tempranas</h3>
+                    <p>Detección de investigaciones, menciones políticas o proyectos de ley que impacten tu negocio.</p>
+                </div>
+                <div class="service-card">
+                    <i data-lucide="bar-chart-3"></i>
+                    <h3>Ranking Actividad</h3>
+                    <p>Priorización de temas: lo que genera conversación, lo urgente y lo que puede esperar.</p>
+                </div>
+            </div>
         </div>
-        <hr class="divider">
-        <div class="topic">
-            <div class="topic-title">Viáticos millonarios en el Gabinete</div>
-            <div class="topic-body">Javier Giménez percibió más de G. 576 millones en viáticos, contrastando con el pedido de "economía de guerra".</div>
-            <div class="temp-badge temp-alta">Alta</div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="metodologia" class="methodology">
+        <div class="container">
+            <div class="methodology-wrapper">
+                <div class="methodology-text">
+                    <h2>Metodología: El Modelo Iceberg</h2>
+                    <p>Cada cliente recibe un análisis basado en el principio de <strong>asimetría estratégica</strong>.</p>
+                    <ul class="methodology-list">
+                        <li>
+                            <strong>Superficie:</strong> Temperatura mediática, social y qué se dice de sus productos y directivos.
+                        </li>
+                        <li>
+                            <strong>Base:</strong> Tendencias de fondo, cambios regulatorios y oportunidades silenciosas.
+                        </li>
+                    </ul>
+                </div>
+                <div class="methodology-visual">
+                    <div class="iceberg">
+                        <div class="iceberg-top">Superficie</div>
+                        <div class="iceberg-bottom">Estrategia Profunda</div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
-        <div class="section-header">⚽ <span class="section-title">Deportes</span></div>
-        <div class="topic">
-            <div class="topic-title">Ariel Holan a Cerro Porteño</div>
-            <div class="topic-body">El argentino de 65 años llega para reemplazar a Jorge Bava tras el mal inicio del Apertura.</div>
-            <div class="temp-badge temp-alta">Alta</div>
+    <!-- Planes Section -->
+    <section id="planes" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Formatos de Entrega</h2>
+                <p>Niveles de profundidad adaptados al tamaño y necesidad de tu organización.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Pulso Startup</h3>
+                    <p class="description">Ideal para empresas de hasta 20 empleados.</p>
+                    <ul class="features">
+                        <li><i data-lucide="check"></i> Informe semanal (2-3 págs)</li>
+                        <li><i data-lucide="check"></i> Foco en reputación</li>
+                        <li><i data-lucide="check"></i> Alertas tempranas</li>
+                    </ul>
+                    <a href="https://wa.me/595972488421" class="btn btn-outline">Solicitar Info</a>
+                </div>
+                <div class="price-card featured">
+                    <div class="featured-badge">Recomendado</div>
+                    <h3>Pulso Empresa</h3>
+                    <p class="description">Informe completo para empresas en crecimiento.</p>
+                    <ul class="features">
+                        <li><i data-lucide="check"></i> Informe completo (5-7 págs)</li>
+                        <li><i data-lucide="check"></i> Radar competitivo</li>
+                        <li><i data-lucide="check"></i> Alertas regulatorias</li>
+                        <li><i data-lucide="check"></i> Recomendaciones estratégicas</li>
+                    </ul>
+                    <a href="https://wa.me/595972488421" class="btn btn-primary">Contratar Ahora</a>
+                </div>
+                <div class="price-card">
+                    <h3>Pulso Ecosistema</h3>
+                    <p class="description">Para holdings y grupos empresariales.</p>
+                    <ul class="features">
+                        <li><i data-lucide="check"></i> Informe extendido</li>
+                        <li><i data-lucide="check"></i> Coordinación de marcas</li>
+                        <li><i data-lucide="check"></i> Sesión quincenal de análisis</li>
+                        <li><i data-lucide="check"></i> Gestión de riesgos</li>
+                    </ul>
+                    <a href="https://wa.me/595972488421" class="btn btn-outline">Consultar</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
-        <div class="section-header">🎭 <span class="section-title">Cultura</span></div>
-        <div class="topic">
-            <div class="topic-title">Gretha Matiauda: Miss Universo Paraguay 2026</div>
-            <div class="topic-body">Representará al país en la edición 75 en Puerto Rico.</div>
-            <div class="temp-badge temp-alta">Alta</div>
+    <!-- Value Section -->
+    <section class="value">
+        <div class="container">
+            <div class="value-grid">
+                <div class="value-item">
+                    <i data-lucide="zap"></i>
+                    <h4>Lenguaje Claro</h4>
+                    <p>Informes que entiende cualquier miembro del equipo, no solo especialistas.</p>
+                </div>
+                <div class="value-item">
+                    <i data-lucide="target"></i>
+                    <h4>Foco en Acción</h4>
+                    <p>Alertas con recomendaciones concretas: Atender, Preparar, Silenciar.</p>
+                </div>
+                <div class="value-item">
+                    <i data-lucide="users"></i>
+                    <h4>Análisis Humano</h4>
+                    <p>Combinamos monitoreo automatizado con análisis cualitativo local.</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
-        <div class="section-header">🚨 <span class="section-title">Seguridad</span></div>
-        <div class="topic">
-            <div class="topic-title">Traslado de Gianina García Troche</div>
-            <div class="topic-body">La pareja de Marset fue llevada de urgencia al Hospital de Itauguá bajo fuerte custodia.</div>
-            <div class="temp-badge temp-alta">Alta</div>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>¿Listo para tomar el pulso de tu empresa?</h2>
+            <p>Suscríbete ahora y recibe tu primer informe estratégico esta misma semana.</p>
+            <div class="cta-btns">
+                <a href="https://wa.me/595972488421" class="btn btn-primary lg">Hablar con un Especialista</a>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="ranking">
-        <div class="section-title" style="margin-bottom:10px;">📈 Ranking del día</div>
-        <div class="rank-item">🥇 Expulsión de "Chaqueñito" Vera</div>
-        <div class="rank-item">🥈 Paro de transporte (Acuerdo USD 7,6M)</div>
-        <div class="rank-item">🥉 Caso Marset: Hospitalización de García Troche</div>
-        <div class="rank-item">4️⃣ Ariel Holan nuevo DT de Cerro</div>
-        <div class="rank-item">5️⃣ Debate por viáticos del Jefe de Gabinete</div>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="pulsoparaguay-logo.png" alt="Pulso Paraguay">
+                    <p>Inteligencia de Mercado y Entorno.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Suscripción Mensual</a>
+                    <a href="#">Paquete Trimestral</a>
+                    <a href="#">Proyecto Puntual</a>
+                </div>
+                <div class="footer-contact">
+                    <p><i data-lucide="phone"></i> +595 972 488421</p>
+                    <p><i data-lucide="map-pin"></i> Asunción, Paraguay</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pulso Paraguay. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
-    <div class="insight">
-        <span class="insight-label">Insight del día</span>
-        <div class="insight-text">El lunes 30 de marzo fue un día de cuentas que llegaron. La distancia entre el discurso del Estado y su realidad cotidiana se hizo más corta que nunca. El caso Chaqueñito revela que el costo político de la impunidad se volvió insostenible.</div>
-    </div>
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/595972488421" class="whatsapp-float" target="_blank" aria-label="Contacto WhatsApp">
+        <i data-lucide="message-circle"></i>
+    </a>
 
-    <div class="sources">
-        Fuentes: Última Hora · ABC Color · NPY · Diario HOY · La Nación PY · MOPC.gov.py
-    </div>
-</div>
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
 </body>
 </html>
