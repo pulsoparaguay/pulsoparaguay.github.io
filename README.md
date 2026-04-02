@@ -1,1 +1,0 @@
-# pulsoparaguay.github.io
