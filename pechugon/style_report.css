@@ -309,3 +309,8 @@ body {
     .grid-layout, .strategy-grid { grid-template-columns: 1fr; }
     .hero-content { flex-direction: column; text-align: center; }
 }
+
+.brand-link {
+    color: inherit;
+    text-decoration: none;
+}
